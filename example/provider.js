@@ -52,4 +52,17 @@
   // Add Service use service
   module.service('exampleService2', ['exampleValue', ExampleService]);
 
+  // Add Service use provider
+  module.provider('exampleService3', function ExampleService3Provider() {
+    var banner;
+
+    this.setBanner = function ExampleService3ProviderSetBanner(value) {
+      banner = value;
+    };
+
+    this.$get = ['exampleValue', function ExampleService3Factory(exampleValue) {
+      return new ExampleService(exampleValue, banner);
+    }];
+  });
+
 })();
