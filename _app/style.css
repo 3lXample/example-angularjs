@@ -5,3 +5,9 @@
  * Copyright (c) 2017 3lXample (https://github.com/3lXample)
  * Licensed under the MIT license
  */
+body {
+  width         : 650px;
+  margin        : 0 auto;
+  border-top    : 4px solid #007fc7;
+  border-bottom : 4px solid #007fc7;
+}
