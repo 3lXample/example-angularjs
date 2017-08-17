@@ -24,9 +24,10 @@
   <!-- App JS -->
   <script src="module.js"></script>
   <script src="controller.js"></script>
+  <script src="filter.js"></script>
 </head>
 <body ng-controller="exampleController">
-  <h1>{{title}}</h1>
+  <h1>{{title | reverse}}</h1>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="../_vendor/jquery.slim.min.js"></script>
   <script src="../_vendor/popper.min.js"></script>
