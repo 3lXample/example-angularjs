@@ -20,6 +20,15 @@ body > header h1 {
   margin        : 0;
   line-height   : 0.75;
 }
+body > nav {
+  margin        : 5px 0;
+}
+body > nav ul.nav li.nav-item:first-child {
+  margin-left   : 15px;
+}
+body > nav ul.nav li.nav-item:last-child {
+  margin-right  : 15px;
+}
 body > footer {
   background    : #c8e4a0;
   border-radius : 2.5px;
