@@ -20,8 +20,6 @@
   <link href="../_vendor/bootstrap.min.css" rel="stylesheet">
   <!-- App CSS -->
   <link href="../_app/style.css" rel="stylesheet">
-  <!-- Page CSS -->
-  <link href="style.css" rel="stylesheet">
 
   <!-- AngularJS JS -->
   <script src="../_vendor/angular.min.js"></script>
@@ -34,8 +32,6 @@
   <script src="../_app/controller.js"></script>
   <script src="../_app/provider.js"></script>
   <script src="../_app/filter.js"></script>
-  <!-- Page JS -->
-  <script src="controller.js"></script>
 </head>
 <body>
   <header>
@@ -57,54 +53,17 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href=".">Pagination</a>
+        <a class="nav-link" href="../pagination">Pagination</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../addition">Addition</a>
+        <a class="nav-link active" href=".">Addition</a>
       </li>
     </ul>
   </nav>
-  <main ng-controller="paginationController">
+  <main>
     <section>
-      <h2>Pagination Example</h2>
-      <nav aria-label="Pagination Example Navigation">
-        <h3 class="sr-only">Pagination Example Navigation</h3>
-        <div class="row">
-          <div class="col">
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="" ng-click="prevPage()">Previous</a></li>
-              <li class="page-item"><a class="page-link" href="" ng-click="nextPage()">Next</a></li>
-            </ul>
-          </div>
-          <div class="col col-auto">
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link">Page : {{page}}</a></li>
-              <li class="page-item"><a class="page-link" href="" ng-click="reset()">Reset</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <article>
-        <h3 class="sr-only">Pagination Example Content</h3>
-        <table class="table table-sm table-bordered table-hover">
-          <thead class="thead-inverse">
-            <tr>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Phone</th>
-              <th>Date of Birth</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr ng-repeat="user in users track by user.id">
-              <td>{{user.firstName}}</td>
-              <td>{{user.lastName}}</td>
-              <td>{{user.phone}}</td>
-              <td>{{user.dob | date:'dd-MMM-yyyy'}}</td>
-            </tr>
-          </tbody>
-        </table>
-      </article>
+      <h2>Example AngularJS Web</h2>
+      <p>An example of web made with AngularJS</p>
     </section>
   </main>
   <footer>
