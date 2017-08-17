@@ -65,4 +65,16 @@
     }];
   });
 
+  module.provider('exampleService4', function ExampleService4Provider() {
+    var banner;
+
+    this.setBanner = function ExampleService4ProviderSetBanner(value) {
+      banner = value;
+    };
+
+    this.$get = ['exampleValue', function ExampleService4Factory(exampleValue) {
+      return new ExampleService(exampleValue, banner);
+    }];
+  });
+
 })();
