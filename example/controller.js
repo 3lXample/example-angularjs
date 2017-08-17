@@ -12,9 +12,10 @@
   var module = angular.module(name);
 
   // Add Controller
-  module.controller('exampleController', ['$scope',
-    function exampleController($scope) {
+  module.controller('exampleController', ['$scope', 'exampleService1',
+    function exampleController($scope, exampleService1) {
       $scope.title = 'elpmaxE SJralugnA';
+      $scope.exam1 = exampleService1.getHeader();
     }
   ]);
 
