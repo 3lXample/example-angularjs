@@ -49,4 +49,7 @@
     }
   ]);
 
+  // Add Service use service
+  module.service('exampleService2', ['exampleValue', ExampleService]);
+
 })();
