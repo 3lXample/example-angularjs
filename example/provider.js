@@ -14,4 +14,7 @@
   // Add Constants
   module.constant('exampleConstant', 'built by Anisetus Elly Efendi');
 
+  // Add Values
+  module.value('exampleValue', 'AngularJS 1.6.5');
+
 })();
