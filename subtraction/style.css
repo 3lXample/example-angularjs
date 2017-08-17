@@ -1,0 +1,25 @@
+/**
+ * example-angularjs
+ * https://github.com/3lXample/example-angularjs
+ *
+ * Copyright (c) 2017 3lXample (https://github.com/3lXample)
+ * Licensed under the MIT license
+ */
+main table thead tr th:nth-child(3) {
+  text-align: center;
+}
+main table thead tr th:nth-child(4) {
+  text-align: center;
+}
+main table tbody tr td:nth-child(3) {
+  text-align: center;
+}
+main table tbody tr td:nth-child(4) {
+  text-align: center;
+}
+main table tbody tr td:nth-child(3) {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+main table tbody tr td:nth-child(4) {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
