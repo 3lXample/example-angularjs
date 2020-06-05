@@ -40,7 +40,7 @@
       if (users === undefined) {
         // Beware: if not use absolute URL, it will be relative to current page url location.
         // So it will not relative to this file
-        $http.get('../_api/user.json').then(
+        $http.get('_api/user.json').then(
           function success(response) {
             users = response.data.users;
             callback(users);

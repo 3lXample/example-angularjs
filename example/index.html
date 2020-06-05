@@ -12,22 +12,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <base href="/example-angularjs/">
   <title>3lXample - Example AngularJS Web</title>
   <meta name="description" content="An example of web made with AngularJS">
-  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 
   <!-- Bootstrap CSS -->
-  <link href="../_vendor/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="_vendor/bootstrap.min.css">
 
   <!-- AngularJS JS -->
-  <script src="../_vendor/angular.min.js"></script>
+  <script src="_vendor/angular.min.js"></script>
   <!-- App JS -->
-  <script src="module.js"></script>
-  <script src="config.js"></script>
-  <script src="directive.js"></script>
-  <script src="controller.js"></script>
-  <script src="provider.js"></script>
-  <script src="filter.js"></script>
+  <script src="example/module.js"></script>
+  <script src="example/config.js"></script>
+  <script src="example/directive.js"></script>
+  <script src="example/controller.js"></script>
+  <script src="example/provider.js"></script>
+  <script src="example/filter.js"></script>
 </head>
 <body ng-controller="exampleController">
   <h1>{{title | reverse}}</h1>
@@ -59,8 +60,8 @@
     </tr>
   </table>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="../_vendor/jquery.slim.min.js"></script>
-  <script src="../_vendor/popper.min.js"></script>
-  <script src="../_vendor/bootstrap.min.js"></script>
+  <script src="_vendor/jquery.slim.min.js"></script>
+  <script src="_vendor/popper.min.js"></script>
+  <script src="_vendor/bootstrap.min.js"></script>
 </body>
 </html>
