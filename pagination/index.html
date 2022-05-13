@@ -5,12 +5,12 @@
  * Copyright (c) 2017 3lXample (https://github.com/3lXample)
  * Licensed under the MIT license
  -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" ng-app="3XApp" ng-strict-di>
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <base href="/example-angularjs/">
   <title>3lXample - Example AngularJS Web</title>
@@ -50,7 +50,6 @@
     </div>
   </header>
   <nav>
-    <h2 class="sr-only">Navigation</h2>
     <ul class="nav nav-tabs">
       <li class="nav-item">
         <a class="nav-link" href=".">
@@ -72,7 +71,6 @@
     <section>
       <h2>Pagination Example</h2>
       <nav aria-label="Pagination Example Navigation">
-        <h3 class="sr-only">Pagination Example Navigation</h3>
         <div class="row">
           <div class="col">
             <ul class="pagination">
@@ -89,9 +87,8 @@
         </div>
       </nav>
       <article>
-        <h3 class="sr-only">Pagination Example Content</h3>
         <table class="table table-sm table-bordered table-hover">
-          <thead class="thead-inverse">
+          <thead class="table-dark">
             <tr>
               <th>First Name</th>
               <th>Last Name</th>
@@ -100,6 +97,9 @@
             </tr>
           </thead>
           <tbody>
+            <tr ng-if="users.length == 0">
+              <td class="message" colspan="4">No data!</td>
+            </tr>
             <tr ng-repeat="user in users track by user.id">
               <td>{{user.firstName}}</td>
               <td>{{user.lastName}}</td>
@@ -115,8 +115,6 @@
     <p>Copyright (c) 2017 3lXample (https://github.com/3lXample)</p>
     <p>Designed and built by Anisetus Elly Efendi</p>
   </footer>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="_vendor/jquery.slim.min.js"></script>
   <script src="_vendor/popper.min.js"></script>
   <script src="_vendor/bootstrap.min.js"></script>
 </body>
